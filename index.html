@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--
+      Content-Security-Policy.
+
+      Everything this site needs it serves itself: no third-party scripts, no
+      hosted fonts, no analytics, no ad network. So the policy can be strict.
+
+      'unsafe-inline' is present for style-src only, because the components use
+      React inline `style` attributes. It does not permit inline scripts.
+      If the charity later adds analytics or a payment provider, that origin
+      must be added here AND in the matching host config under deploy/.
+
+      Two directives are deliberately NOT here, because a <meta> CSP is the
+      wrong place for either:
+
+      - frame-ancestors is ignored outright in a meta tag.
+      - upgrade-insecure-requests rewrites every http:// request to https://.
+        In production that is handled by the HSTS header. In a meta tag it
+        also applies while developing, where the dev server speaks plain
+        http: Safari and any access over a LAN address (http://192.168.x.x)
+        get every request upgraded to a port with no TLS behind it, and the
+        page renders blank.
+
+      Both are set as real response headers in deploy/, which is where they
+      work correctly and where they only affect the deployed site.
+    -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+        default-src 'self';
+        base-uri 'self';
+        object-src 'none';
+        form-action 'self';
+        script-src 'self';
+        style-src 'self' 'unsafe-inline';
+        font-src 'self';
+        img-src 'self' data:;
+        connect-src 'self';
+        manifest-src 'self'
+      "
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#0e1a2b" />
+
+    <title>Friends of TS Queen Mary — Restoring Scotland's last turbine steamer</title>
+
+    <link rel="icon" href="/tsqm/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/tsqm/img/logo-roundel-256.png" />
+
+    <!-- The hero image and its font are the two things that gate first paint. -->
+    <link
+      rel="preload"
+      as="image"
+      type="image/webp"
+      href="/tsqm/img/ship-underway-1933-1920.webp"
+      imagesrcset="/tsqm/img/ship-underway-1933-1280.webp 1280w, /tsqm/img/ship-underway-1933-1920.webp 1920w, /tsqm/img/ship-underway-1933-2560.webp 2560w"
+      imagesizes="100vw"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/tsqm/fonts/cormorant-garamond-normal-latin.woff2"
+      crossorigin="anonymous"
+    />
+    <meta name="description" content="The Friends of TS Queen Mary is restoring the last surviving Clyde turbine steamer, launched in 1933, to return her to active service in Britain&#39;s coastal waters. Registered Scottish Charity SC043623.">
+    <link rel="icon" href="/tsqm/favicon.ico">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Friends of TS Queen Mary — Restoring Scotland&#39;s last turbine steamer">
+    <meta property="og:site_name" content="Friends of TS Queen Mary">
+    <meta property="og:description" content="The Friends of TS Queen Mary is restoring the last surviving Clyde turbine steamer, launched in 1933, to return her to active service in Britain&#39;s coastal waters. Registered Scottish Charity SC043623.">
+    <meta property="og:image" content="/img/ship-underway-1933-1280.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="/img/ship-underway-1933-1280.jpg">
+    <script type="module" crossorigin src="/tsqm/assets/index-BBvKsK8e.js"></script>
+    <link rel="stylesheet" crossorigin href="/tsqm/assets/index-BD0u1ZnE.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <div style="padding: 3rem 1.5rem; font-family: Georgia, serif; max-width: 40rem; margin: 0 auto">
+        <h1 style="font-weight: 300">Friends of TS Queen Mary</h1>
+        <p>
+          We are restoring TS Queen Mary to return her to active service in Britain’s coastal
+          waters. This site needs JavaScript to display. You can reach the charity on
+          <a href="tel:+441412550298">0141 255 0298</a> or at
+          <a href="mailto:office@tsqueenmary.org.uk">office@tsqueenmary.org.uk</a>.
+        </p>
+      </div>
+    </noscript>
+  </body>
+</html>

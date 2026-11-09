@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="tsqm-roundel-title">
+<title id="tsqm-roundel-title">TS Queen Mary, Glasgow</title>
+<defs>
+  <clipPath id="tsqm-disc"><circle cx="256" cy="256" r="148"/></clipPath>
+  <mask id="tsqm-crescent">
+    <circle cx="234" cy="202" r="25" fill="#fff"/>
+    <circle cx="247" cy="202" r="20" fill="#000"/>
+  </mask>
+  <path id="tsqm-arc-top" d="M60 256A196 196 0 0 1 452 256"/>
+  <path id="tsqm-arc-bot" d="M78 256A178 178 0 0 0 434 256"/>
+</defs>
+
+<!-- rope border -->
+<circle cx="256" cy="256" r="233" fill="none" stroke="#C9B48C" stroke-width="30"/>
+<g stroke="#A08A62" stroke-width="3.1" stroke-linecap="round" fill="none" opacity=".85"><path d="M474.9 248.0L502.8 265.1"/><path d="M474.7 268.2L500.9 287.8"/><path d="M472.6 288.3L497.0 310.3"/><path d="M468.7 308.2L490.9 332.3"/><path d="M463.0 327.6L482.9 353.6"/><path d="M455.5 346.4L472.9 374.1"/><path d="M446.3 364.4L461.1 393.6"/><path d="M435.5 381.5L447.5 412.0"/><path d="M423.1 397.5L432.3 429.0"/><path d="M409.4 412.3L415.6 444.5"/><path d="M394.3 425.8L397.5 458.4"/><path d="M378.0 437.8L378.2 470.6"/><path d="M360.7 448.3L357.9 481.0"/><path d="M342.5 457.2L336.7 489.4"/><path d="M323.6 464.3L314.8 495.9"/><path d="M304.1 469.7L292.5 500.3"/><path d="M284.2 473.2L269.8 502.6"/><path d="M264.0 474.9L246.9 502.8"/><path d="M243.8 474.7L224.2 500.9"/><path d="M223.7 472.6L201.7 497.0"/><path d="M203.8 468.7L179.7 490.9"/><path d="M184.4 463.0L158.4 482.9"/><path d="M165.6 455.5L137.9 472.9"/><path d="M147.6 446.3L118.4 461.1"/><path d="M130.5 435.5L100.0 447.5"/><path d="M114.5 423.1L83.0 432.3"/><path d="M99.7 409.4L67.5 415.6"/><path d="M86.2 394.3L53.6 397.5"/><path d="M74.2 378.0L41.4 378.2"/><path d="M63.7 360.7L31.0 357.9"/><path d="M54.8 342.5L22.6 336.7"/><path d="M47.7 323.6L16.1 314.8"/><path d="M42.3 304.1L11.7 292.5"/><path d="M38.8 284.2L9.4 269.8"/><path d="M37.1 264.0L9.2 246.9"/><path d="M37.3 243.8L11.1 224.2"/><path d="M39.4 223.7L15.0 201.7"/><path d="M43.3 203.8L21.1 179.7"/><path d="M49.0 184.4L29.1 158.4"/><path d="M56.5 165.6L39.1 137.9"/><path d="M65.7 147.6L50.9 118.4"/><path d="M76.5 130.5L64.5 100.0"/><path d="M88.9 114.5L79.7 83.0"/><path d="M102.6 99.7L96.4 67.5"/><path d="M117.7 86.2L114.5 53.6"/><path d="M134.0 74.2L133.8 41.4"/><path d="M151.3 63.7L154.1 31.0"/><path d="M169.5 54.8L175.3 22.6"/><path d="M188.4 47.7L197.2 16.1"/><path d="M207.9 42.3L219.5 11.7"/><path d="M227.8 38.8L242.2 9.4"/><path d="M248.0 37.1L265.1 9.2"/><path d="M268.2 37.3L287.8 11.1"/><path d="M288.3 39.4L310.3 15.0"/><path d="M308.2 43.3L332.3 21.1"/><path d="M327.6 49.0L353.6 29.1"/><path d="M346.4 56.5L374.1 39.1"/><path d="M364.4 65.7L393.6 50.9"/><path d="M381.5 76.5L412.0 64.5"/><path d="M397.5 88.9L429.0 79.7"/><path d="M412.3 102.6L444.5 96.4"/><path d="M425.8 117.7L458.4 114.5"/><path d="M437.8 134.0L470.6 133.8"/><path d="M448.3 151.3L481.0 154.1"/><path d="M457.2 169.5L489.4 175.3"/><path d="M464.3 188.4L495.9 197.2"/><path d="M469.7 207.9L500.3 219.5"/><path d="M473.2 227.8L502.6 242.2"/></g>
+<circle cx="256" cy="256" r="248.0" fill="none" stroke="#15305C" stroke-width="3"/>
+<circle cx="256" cy="256" r="218.0" fill="none" stroke="#15305C" stroke-width="3"/>
+
+<!-- navy band with its blue and oxblood fillets -->
+<circle cx="256" cy="256" r="216" fill="#15305C"/>
+<circle cx="256" cy="256" r="205" fill="none" stroke="#1B7FC4" stroke-width="7"/>
+<circle cx="256" cy="256" r="196" fill="none" stroke="#8C2334" stroke-width="3"/>
+<circle cx="256" cy="256" r="150" fill="#FBF4DC" stroke="#1F7A5A" stroke-width="3"/>
+<circle cx="432.0" cy="256.0" r="19" fill="#FBF4DC" stroke="#15305C" stroke-width="2"/><circle cx="432.0" cy="256.0" r="15" fill="none" stroke="#1F7A5A" stroke-width="3"/><circle cx="432.0" cy="256.0" r="11" fill="none" stroke="#8C2334" stroke-width="2.5"/><circle cx="432.0" cy="256.0" r="8.5" fill="#F2B705"/><circle cx="80.0" cy="256.0" r="19" fill="#FBF4DC" stroke="#15305C" stroke-width="2"/><circle cx="80.0" cy="256.0" r="15" fill="none" stroke="#1F7A5A" stroke-width="3"/><circle cx="80.0" cy="256.0" r="11" fill="none" stroke="#8C2334" stroke-width="2.5"/><circle cx="80.0" cy="256.0" r="8.5" fill="#F2B705"/>
+
+<!-- Williamson-Buchanan house flag: crescent and star on a navy burgee -->
+<g clip-path="url(#tsqm-disc)">
+  <path d="M150 150 L150 380" stroke="#15305C" stroke-width="3.4" fill="none"/>
+  <circle cx="150" cy="148" r="4.5" fill="#15305C"/>
+  <path d="M150 157 L122 374 M150 157 L172 374" stroke="#15305C" stroke-width="1.6" fill="none" opacity=".7"/>
+  <path d="M152 176 C206 164 250 186 288 179 C320 173 344 186 362 197
+           C340 199 328 214 308 220 C274 230 240 218 208 228
+           C184 235 164 239 152 241 Z" fill="#15305C"/>
+  <path d="M166 187 C206 180 246 197 282 191" stroke="#2C4C82" stroke-width="2.2" fill="none" opacity=".5"/>
+  <path d="M170 226 C206 220 242 212 278 216" stroke="#0D2246" stroke-width="2.2" fill="none" opacity=".4"/>
+  <circle cx="234" cy="202" r="25" fill="#F2B705" mask="url(#tsqm-crescent)"/>
+  <polygon points="263.0,181.0 268.2,194.9 283.0,195.5 271.4,204.7 275.3,219.0 263.0,210.8 250.7,219.0 254.6,204.7 243.0,195.5 257.8,194.9" fill="#F2B705"/>
+</g>
+
+<g fill="#FFFFFF" font-family="Georgia, 'Times New Roman', serif" font-weight="700" letter-spacing="3">
+  <text font-size="46"><textPath href="#tsqm-arc-top" startOffset="50%" text-anchor="middle">TS QUEEN MARY</textPath></text>
+  <text font-size="46"><textPath href="#tsqm-arc-bot" startOffset="50%" text-anchor="middle">GLASGOW</textPath></text>
+</g>
+</svg>
