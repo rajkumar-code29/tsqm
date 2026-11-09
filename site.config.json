@@ -1,0 +1,18 @@
+{
+  "title": "Friends of TS Queen Mary — Restoring Scotland's last turbine steamer",
+  "description": "The Friends of TS Queen Mary is restoring the last surviving Clyde turbine steamer, launched in 1933, to return her to active service in Britain's coastal waters. Registered Scottish Charity SC043623.",
+  "language": "en-GB",
+  "robots": {
+    "index": true
+  },
+  "icons": {
+    "icon": "/favicon.ico"
+  },
+  "openGraph": {
+    "image": "/img/ship-underway-1933-1280.jpg"
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

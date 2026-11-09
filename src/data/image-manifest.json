@@ -1,0 +1,283 @@
+{
+  "ship-underway-1933": {
+    "src": "01-ship/historic-bw-underway_2014x960.jpg",
+    "width": 2560,
+    "height": 1220,
+    "aspect": 2.0984,
+    "mono": true,
+    "lqip": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAACQAwCdASoUAAoAPslWo0unpKMhsAgA8BkJaQAAW9KrUb2NcbAAAP7W6NEH5SOAbMl82dXaaj0ZhFxY3mL+49IVyWnOahAA",
+    "widths": [
+      640,
+      1280,
+      1920,
+      2560
+    ],
+    "fallback": 2560
+  },
+  "ship-hull-gangway": {
+    "src": "01-ship/hull-side-and-gangway_2048x1536.jpg",
+    "width": 2400,
+    "height": 1800,
+    "aspect": 1.3333,
+    "mono": false,
+    "lqip": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAACQBACdASoUAA8APslSoksnpKMhsAgA8BkJaACdL1zZgA3LeYMJ6W10bxaBWPgA/ueRKrr73tzbFikLVqsOGRr0Fxt2EUWBmEAl3nw04reTFUNdbW/o+2QwmnEiIpDzkAQC9MIlnuxyHPslF7zjfvHsk1bK1o7cj2liddWE6mSPnyRX/wxuJM5skRMwAA==",
+    "widths": [
+      640,
+      1280,
+      1920,
+      2400
+    ],
+    "fallback": 2400
+  },
+  "ship-arriving-glasgow": {
+    "src": "01-ship/colour-arriving-glasgow_315x315.jpg",
+    "width": 880,
+    "height": 880,
+    "aspect": 1.0,
+    "mono": false,
+    "lqip": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAADwBACdASoUABQAPslYok0npSMiKA1Q8BkJQBOmUDX/wD0GH4zHxLTW7SVWM9fcEAAA/u+8D+Z2AD4tSfGP3w0J7FxeKLZpOK0f3amhk6qudA+b9OdtXLXryGcmsXlpyVxlDkapxsVMOg0XU8Ua5HI1d3Z9mOZ9mr00TrBIQgtoQniOPQ5BLVkYAAA=",
+    "widths": [
+      440,
+      880
+    ],
+    "fallback": 880
+  },
+  "ship-quayside": {
+    "src": "01-ship/colour-quayside-distant_315x315.jpg",
+    "width": 880,
+    "height": 880,
+    "aspect": 1.0,
+    "mono": false,
+    "lqip": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAADwBACdASoUABQAPrlKnUsnJCKht/qoAOAXCWQAnQAh3t6K1JFdTG6UDrkgLx93aCAA/uud2DqhOlAUNAYrhhSi30f9boihUoDRuHflDsJgxQVNeE+hSpDuyRvNoAtryen1MrOWmwDDlxHT4JHMXsltEEZ09+QiKemssYoMlp3MRvTtS9ux9xkwuX1hoxQdq0zEEfXoT00QAA==",
+    "widths": [
+      440,
+      880
+    ],
+    "fallback": 880
+  },
+  "teak-salvage-1": {
+    "src": "02-restoration/salvaged-teak-timber-1_1280x960.jpg",
+    "width": 1800,
+    "height": 1350,
+    "aspect": 1.3333,
+    "mono": false,
+    "lqip": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAACQAwCdASoUAA8APslSoksnpKMhsAgA8BkJQBOmUAA02FvSM6+YAP1m6qR9mFzZHzvhXDLAC/50lYfaeT+rrCAVGPMuWyOaG6McDL7Mnl03roERcMHNzHAoAAA=",
+    "widths": [
+      640,
+      1280,
+      1800
+    ],
+    "fallback": 1800
+  },
+  "teak-salvage-2": {
+    "src": "02-restoration/salvaged-teak-timber-2_1280x960.jpg",
+    "width": 1800,
+    "height": 1350,
+    "aspect": 1.3333,
+    "mono": false,
+    "lqip": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAwBACdASoUAA8APslSo0snpKMhsAgA8BkJQBOmUABQuXxGAsQhQI+otgAA/GI/LhKuFpxTPEtSgVny5SIjyKpZRIINxGYQvbFwFxPkh/qeFCUNqH9Mnq6gLm2N/lPJNDDe8dXscCxLNTqDiGAAAA==",
+    "widths": [
+      640,
+      1280,
+      1800
+    ],
+    "fallback": 1800
+  },
+  "teak-salvage-3": {
+    "src": "02-restoration/salvaged-teak-timber-3_1280x960.jpg",
+    "width": 1800,
+    "height": 1350,
+    "aspect": 1.3333,
+    "mono": false,
+    "lqip": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADwAwCdASoUAA8APslSoksnpKMhsAgA8BkJYwCdACPpL0MZWoIPijwcAPaZY4j9yhq1wb2Fb4qH0Pqwr05e57If91ap9rI7oSpIs+7W0jHs/d09j/40YdAbTrUZw8f5XnHG4mHfHQaMqFJAAAA=",
+    "widths": [
+      640,
+      1280,
+      1800
+    ],
+    "fallback": 1800
+  },
+  "teak-salvage-4": {
+    "src": "02-restoration/salvaged-teak-timber-4_1280x960.jpg",
+    "width": 1800,
+    "height": 1350,
+    "aspect": 1.3333,
+    "mono": false,
+    "lqip": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAQBACdASoUAA8APslSoksnpKMhsAgA8BkJYwC06CPgDb6sSHydNl/lSAD8/BcxeQ6ubv45Ssq0cf/uyMLc+8eNRwElhtt2ItljZ4D7iMNGlvWQwVGoEWE8nKLrnaguIQ34XwmivAaJcOpTB3J/GlwA",
+    "widths": [
+      640,
+      1280,
+      1800
+    ],
+    "fallback": 1800
+  },
+  "teak-deck-before": {
+    "src": "02-restoration/teak-deck-before_315x315.jpg",
+    "width": 880,
+    "height": 880,
+    "aspect": 1.0,
+    "mono": false,
+    "lqip": "data:image/webp;base64,UklGRsIAAABXRUJQVlA4ILYAAAAQBQCdASoUABQAPsleqE8npSOiKAgA8BkJQBOmYJiHtAADrQ20b8OLBN+FzchJcucsAPO/kPUxaT1fUfAfjfitjSGEjNRr8vTYSdvajjgZVrwc7/U6qDfQVGRE6hMN6PCxPQZ+tT7+qqL8+Oy/Oq9rGzWCuv0IMEoELWucJ954eUx30RffHeC+ypOotT7JG3Lj+EUPsUhHd0AAzUR/KqCtOmzeocYqKm9AOVoLwWKHQPuucRAAAA==",
+    "widths": [
+      440,
+      880
+    ],
+    "fallback": 880
+  },
+  "teak-deck-lifting": {
+    "src": "02-restoration/teak-deck-lifting_315x315.jpg",
+    "width": 880,
+    "height": 880,
+    "aspect": 1.0,
+    "mono": false,
+    "lqip": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAABwBQCdASoUABQAPslOoEwno6MiMBgMAPAZCUAXZfq9QABKdW0HeTIETM4wVhwkszilQp+AAP7uPVSkIwqmDmKtTpuyAEsHzk0vfuB07dzksHzbLu6/vwqRb0A8tFQa9w9+LK8EObru1eoP6wQS+2K56pTw9VoLXyBz41CAirFOKkTJSwFWhnR7Xdi+P7udc9nA5xA3S6GpoN8AAAA=",
+    "widths": [
+      440,
+      880
+    ],
+    "fallback": 880
+  },
+  "teak-deck-detail": {
+    "src": "02-restoration/teak-deck-detail_315x315.jpg",
+    "width": 880,
+    "height": 880,
+    "aspect": 1.0,
+    "mono": false,
+    "lqip": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAABQBQCdASoUABQAPslWo0wnpKMiKA1Q8BkJZQCnFBGZJcf+RpNsl26RYWcUgI/bahcYuAAA/pEKpAfQSkJALQHs3u1iVJjYOzJQiFHY89QsFx7FsWrddOmzkfoy9FtXAT0i2yOqdBJeDROuasHzRNeqVcpRLpPvD3HjtAPmfPmNtFGYxei3FtIA9ZWS9h2wQivaWAAA",
+    "widths": [
+      440,
+      880
+    ],
+    "fallback": 880
+  },
+  "deck-works": {
+    "src": "02-restoration/deck-works_315x315.jpg",
+    "width": 880,
+    "height": 880,
+    "aspect": 1.0,
+    "mono": false,
+    "lqip": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAAAwBQCdASoUABQAPslep08npKMiKAgA8BkJQBWGWhg4uK51dL57C6YVeIO4v0msJWDf0AD33+oukjl6yRvl8VFHy0iEnVd3hJQwLmCnBgQYepVPPtBIcIIvQ0QoAErQ0B4fvw4IigIiDk7f3FlndYRMhooLDIfAlQYGTCAxZNdHBAGG7BgP8Auu39fo3AAA",
+    "widths": [
+      440,
+      880
+    ],
+    "fallback": 880
+  },
+  "deck-painted-clyde": {
+    "src": "02-restoration/painted-deck-clyde_315x315.jpg",
+    "width": 880,
+    "height": 880,
+    "aspect": 1.0,
+    "mono": false,
+    "lqip": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAADQBACdASoUABQAPslSpU0npCOiMBgIAPAZCWIAyJgQ68QX+aLe0K1iaXuscz5YgAD+7VC6E7gVlvD5/uvILBNJ3IrX+iXONNqBt8kUM6iNB4j58VSilSJx3JoSqSFz6yaDqo4BGtIiUpH9dnmIAAAA",
+    "widths": [
+      440,
+      880
+    ],
+    "fallback": 880
+  },
+  "deck-covered-interior": {
+    "src": "02-restoration/covered-deck-interior_315x315.jpg",
+    "width": 880,
+    "height": 880,
+    "aspect": 1.0,
+    "mono": false,
+    "lqip": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAADQBACdASoUABQAPslcp08npSMiKAgA8BkJYgDCgBEYPeszFhYuQCa5dVmPy7/OAAD+8xCdQ5icwfAvvf4mI8KoaZGJYd8MPGVPBUiWVEcI7qrs/VXYAWN9moME0hlMq0+F/ImchdixP65EIZ/0hu/ebOuVULeAu+SUVXFusopU4HEGGDumLHnF+wk2ODLKk2A2nRRKhNUrW+3cFgcmAAAA",
+    "widths": [
+      440,
+      880
+    ],
+    "fallback": 880
+  },
+  "patron-sam-neill": {
+    "src": "03-events-and-patrons/patron-sam-neill_315x315.jpg",
+    "width": 880,
+    "height": 880,
+    "aspect": 1.0,
+    "mono": false,
+    "lqip": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAABQBQCdASoUABQAPslWp02npKOiKAqo8BkJQBdkEBAwiemEI00N/m1vR1KPQf9V4uU/+gAA+Xux0ZHFRz+vYx5yLvbeUlFU3wZ/eMJqLt7tGYj4rki/ExnSczUdTiPGLkPLyfKneC3VJjsxWI8hDKhvXSfHeEYqBty9GsbaEOwSfttnxt+p0v9w/VqNT/OChAAAAA==",
+    "widths": [
+      440,
+      880
+    ],
+    "fallback": 880
+  },
+  "royal-reception-1": {
+    "src": "03-events-and-patrons/princess-royal-90th-reception-1.jpg",
+    "width": 1280,
+    "height": 686,
+    "aspect": 1.8659,
+    "mono": false,
+    "lqip": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQBACdASoUAAsAPslUo0unpKMhsAgA8BkJQBOgBD8khTdzYTpPY6KoAAD+0ziryafPN9PFvQRRSn9xF4j0nVpANoz9paKnEDTufaNTru0QY+8S1s4luCKXTbOHXRvz/SQAAA==",
+    "widths": [
+      640,
+      1280
+    ],
+    "fallback": 1280
+  },
+  "royal-reception-2": {
+    "src": "03-events-and-patrons/princess-royal-90th-reception-2.jpg",
+    "width": 1280,
+    "height": 1012,
+    "aspect": 1.2648,
+    "mono": false,
+    "lqip": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAADwAwCdASoUABAAPslSoksnpKMhsAgA8BkJQAALksmEHz8v/muWSO3AAP7r4ojDBdWnGOUWjtJFBGidphFrNwbFoMymDh2yedNTOoVU+Otu8vbg2LT28uRMOeCcncf28+cewgfz3uuyZDpBYnluGpqi9MzMUznSYqO3iitJh3Q60ArOgAA=",
+    "widths": [
+      640,
+      1280
+    ],
+    "fallback": 1280
+  },
+  "royal-reception-3": {
+    "src": "03-events-and-patrons/princess-royal-90th-reception-3.jpg",
+    "width": 1280,
+    "height": 983,
+    "aspect": 1.3021,
+    "mono": false,
+    "lqip": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAACQBACdASoUAA8APslSoksnpKMhsAgA8BkJYwCsIHADBEbEckX+GNtPkAQ/X0AA9FD0TTVZhCgud5li1GjzfR7tWXdkiOrLBAC/HgBjcQd1KcEMjgRowDM6hyAtVox8BkU9tnxq1TBtiHMuR/UL18MHT3cs3tYSnC955nAqgYP8DAAA",
+    "widths": [
+      640,
+      1280
+    ],
+    "fallback": 1280
+  },
+  "royal-reception-4": {
+    "src": "03-events-and-patrons/princess-royal-90th-reception-4.jpg",
+    "width": 1280,
+    "height": 960,
+    "aspect": 1.3333,
+    "mono": false,
+    "lqip": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAAAQBACdASoUAA8APslSoksnpKMhsAgA8BkJYwCdACDjzbmvYzmdE/AVEAD8jCtirWITelXwFkXtJ4Z+sxingfdf7ygEevoSrnLUEon+P+SArm11SPDRLkvCIksUYqH2U5x7XIMiO1x1T/Lw+TYcrpPXwKVxX1jOENzDABmQBa91ZUKSAAA=",
+    "widths": [
+      640,
+      1280
+    ],
+    "fallback": 1280
+  },
+  "royal-reception-5": {
+    "src": "03-events-and-patrons/princess-royal-90th-reception-5.jpg",
+    "width": 1280,
+    "height": 960,
+    "aspect": 1.3333,
+    "mono": false,
+    "lqip": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAADQAwCdASoUAA8APslSoksnpKMhsAgA8BkJQBOgAwg7aJ5r4INdggAA/vSc37/pnZ+ZvsA1qgkGTUk2CSkmJXHnIiXxe6URfI5zSXImOn0fEif8VbuybRORo49ODhSSlh/AZvNgfjJDXpPnRRDBjnLOvNhXlQFFbL1y21bwuuY8mH2VTppyiKQn2y3kLsEI9BXwAA==",
+    "widths": [
+      640,
+      1280
+    ],
+    "fallback": 1280
+  },
+  "royal-reception-6": {
+    "src": "03-events-and-patrons/princess-royal-90th-reception-6.jpg",
+    "width": 1280,
+    "height": 798,
+    "aspect": 1.604,
+    "mono": false,
+    "lqip": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAQBACdASoUAAwAPslSoksnpKMhsAgA8BkJZQCo9CKRgo+tCO93CwH9QAD+0fzWHIj6kQkuRPZzr0rMT9cZ0FmODH/6iYK63M14E4kaXn7kGbmwFTE2fObITd7iYIQvlWuKJU9faMXFA/zhlUu9jHqmZEz/wcXtFHoxjmPgAAA=",
+    "widths": [
+      640,
+      1280
+    ],
+    "fallback": 1280
+  }
+}

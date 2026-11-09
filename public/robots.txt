@@ -1,0 +1,12 @@
+# Friends of TS Queen Mary
+#
+# Note: the private collection page is deliberately NOT listed here. Naming a
+# secret path in robots.txt is the fastest way to publicise it — this file is
+# public and is routinely scraped. That page is kept out of search by having
+# no inbound links, no sitemap entry, an unguessable URL and a runtime
+# noindex tag.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.tsqueenmary.org.uk/sitemap.xml

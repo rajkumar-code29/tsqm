@@ -1,0 +1,15 @@
+# Normalise line endings so the repo is identical on macOS, Linux and Windows.
+* text=auto eol=lf
+
+# Binary assets: never diffed, never line-ending converted.
+*.webp   binary
+*.jpg    binary
+*.jpeg   binary
+*.png    binary
+*.ico    binary
+*.woff2  binary
+*.pdf    binary
+
+# Generated — keep it out of diffs and out of language statistics.
+package-lock.json          linguist-generated=true -diff
+src/data/image-manifest.json linguist-generated=true -diff

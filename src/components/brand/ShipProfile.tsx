@@ -1,0 +1,107 @@
+import { useId } from 'react';
+
+interface ShipProfileProps {
+  /** Ink colour for hull, deckhouses and rigging. */
+  ink?: string;
+  /** Fill for painted topsides and superstructure. */
+  light?: string;
+  /** Shadow tone that separates the deck tiers. */
+  shade?: string;
+  /** Gold accent: sheer stripe, ensign, wash. */
+  accent?: string;
+  className?: string;
+  /** Decorative by default; pass a title to expose it to assistive technology. */
+  title?: string;
+}
+
+/**
+ * TS Queen Mary in profile.
+ *
+ * Every landmark — hull length, deck heights, funnel and mast positions — was
+ * measured off the 1933 photograph and mapped through a single scale factor,
+ * so the drawing carries the real ship's proportions rather than an
+ * impression of them. Regenerate with `python3 tools/gen_ship.py`.
+ */
+export default function ShipProfile({
+  ink = '#0E1A2B',
+  light = '#FBFAF6',
+  shade = '#ECE7DC',
+  accent = '#B08D57',
+  className = '',
+  title,
+}: ShipProfileProps) {
+  const uid = useId().replace(/:/g, '');
+
+  return (
+    <svg
+      viewBox="0 0 1400 700"
+      className={className}
+      xmlns="http://www.w3.org/2000/svg"
+      {...(title
+        ? { role: 'img' as const, 'aria-label': title }
+        : { role: 'presentation' as const, 'aria-hidden': true })}
+      style={
+        {
+          '--ship-ink': ink,
+          '--ship-light': light,
+          '--ship-shade': shade,
+          '--ship-accent': accent,
+          '--ship-sea': 'transparent',
+        } as React.CSSProperties
+      }
+    >
+      {title && <title>{title}</title>}
+      {/* water */}
+      <path d="M0 620 H1400 V700 H0 Z" fill="var(--ship-sea)"/>
+      {/* hull */}
+      <path d="M60.0 466.4 C160.3 470.5, 354.1 476.8, 630.8 483.7 C942.2 490.6, 1218.9 497.5, 1360.1 501.7 C1372.5 537.7, 1362.8 606.9, 1319.9 620.0 L118.8 620.0 C85.6 617.9, 62.1 579.2, 60.0 466.4 Z" fill="var(--ship-light)" stroke="var(--ship-ink)" strokeWidth="2.6" strokeLinejoin="round"/>
+      <clipPath id={`${uid}-hull`}><path d="M60.0 466.4 C160.3 470.5, 354.1 476.8, 630.8 483.7 C942.2 490.6, 1218.9 497.5, 1360.1 501.7 C1372.5 537.7, 1362.8 606.9, 1319.9 620.0 L118.8 620.0 C85.6 617.9, 62.1 579.2, 60.0 466.4 Z"/></clipPath>
+      <g clipPath={`url(#${uid}-hull)`}><path d="M56.5 557.0 C354.1 566.7, 907.6 575.0, 1372.5 576.4 L1372.5 627.6 L55.2 627.6 Z" fill="var(--ship-ink)"/></g>
+      <path d="M77.3 516.9 C561.6 525.2, 1046.0 532.1, 1343.5 534.9" fill="none" stroke="var(--ship-accent)" strokeWidth="2.2" opacity=".85"/>
+      <g fill="var(--ship-ink)" opacity=".92"><rect x="267.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="288.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="309.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="330.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="351.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="372.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="393.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="414.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="435.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="456.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="477.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="498.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="519.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="540.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="561.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="582.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="603.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="624.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="645.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="666.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="687.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="708.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="729.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="750.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="771.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="792.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="813.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="834.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="855.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="876.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="897.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="918.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="939.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="960.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="981.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="1002.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="1023.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="1044.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="1065.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="1086.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="1107.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="1128.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="1149.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="1170.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="1191.5" y="493.4" width="10" height="13" rx="0.6"/><rect x="1212.5" y="493.4" width="10" height="13" rx="0.6"/></g>
+      {/* promenade deck house */}
+      <path d="M196.3 466.4 L196.3 447.7 C561.6 443.6, 976.8 447.7, 1260.4 456.0 L1260.4 476.8" fill="var(--ship-light)" stroke="var(--ship-ink)" strokeWidth="2.4" strokeLinejoin="round"/>
+      <g fill="var(--ship-ink)" opacity=".9"><rect x="229.7" y="450.5" width="16" height="17" rx="0.6"/><rect x="253.7" y="450.5" width="16" height="17" rx="0.6"/><rect x="277.7" y="450.5" width="16" height="17" rx="0.6"/><rect x="301.7" y="450.5" width="16" height="17" rx="0.6"/><rect x="325.7" y="450.5" width="16" height="17" rx="0.6"/><rect x="349.7" y="450.5" width="16" height="17" rx="0.6"/><rect x="373.7" y="450.5" width="16" height="17" rx="0.6"/><rect x="397.7" y="450.5" width="16" height="17" rx="0.6"/><rect x="421.7" y="450.5" width="16" height="17" rx="0.6"/><rect x="445.7" y="450.5" width="16" height="17" rx="0.6"/><rect x="469.7" y="450.5" width="16" height="17" rx="0.6"/><rect x="493.7" y="450.5" width="16" height="17" rx="0.6"/><rect x="517.8" y="450.5" width="16" height="17" rx="0.6"/><rect x="541.8" y="450.5" width="16" height="17" rx="0.6"/><rect x="565.8" y="450.5" width="16" height="17" rx="0.6"/><rect x="589.8" y="450.5" width="16" height="17" rx="0.6"/><rect x="613.8" y="450.5" width="16" height="17" rx="0.6"/><rect x="637.8" y="450.5" width="16" height="17" rx="0.6"/><rect x="661.8" y="450.5" width="16" height="17" rx="0.6"/><rect x="685.8" y="450.5" width="16" height="17" rx="0.6"/><rect x="709.8" y="450.5" width="16" height="17" rx="0.6"/><rect x="733.8" y="450.5" width="16" height="17" rx="0.6"/><rect x="757.8" y="450.5" width="16" height="17" rx="0.6"/><rect x="781.8" y="450.5" width="16" height="17" rx="0.6"/><rect x="805.8" y="450.5" width="16" height="17" rx="0.6"/><rect x="829.8" y="450.5" width="16" height="17" rx="0.6"/><rect x="853.8" y="450.5" width="16" height="17" rx="0.6"/><rect x="877.8" y="450.5" width="16" height="17" rx="0.6"/><rect x="901.8" y="450.5" width="16" height="17" rx="0.6"/><rect x="925.8" y="450.5" width="16" height="17" rx="0.6"/><rect x="949.8" y="450.5" width="16" height="17" rx="0.6"/><rect x="973.8" y="450.5" width="16" height="17" rx="0.6"/><rect x="997.8" y="450.5" width="16" height="17" rx="0.6"/><rect x="1021.8" y="450.5" width="16" height="17" rx="0.6"/><rect x="1045.8" y="450.5" width="16" height="17" rx="0.6"/><rect x="1069.8" y="450.5" width="16" height="17" rx="0.6"/><rect x="1093.8" y="450.5" width="16" height="17" rx="0.6"/><rect x="1117.8" y="450.5" width="16" height="17" rx="0.6"/><rect x="1141.8" y="450.5" width="16" height="17" rx="0.6"/><rect x="1165.8" y="450.5" width="16" height="17" rx="0.6"/><rect x="1189.8" y="450.5" width="16" height="17" rx="0.6"/><rect x="1213.8" y="450.5" width="16" height="17" rx="0.6"/></g>
+      {/* boat deck */}
+      <path d="M215.7 447.7 L215.7 397.9 C630.8 393.7, 976.8 396.5, 1177.4 403.4 L1177.4 447.7" fill="var(--ship-light)" stroke="var(--ship-ink)" strokeWidth="2.4" strokeLinejoin="round"/>
+      <path d="M196.3 464.3 C561.6 461.6, 976.8 465.7, 1260.4 474.0 L1260.4 476.8 L196.3 466.4 Z" fill="var(--ship-shade)" stroke="none" opacity=".85"/>
+      <g stroke="var(--ship-ink)" strokeWidth="1.3" opacity=".55" fill="none"><path d="M354.1 397.9v15"/><path d="M367.1 397.9v15"/><path d="M380.1 397.9v15"/><path d="M393.1 397.9v15"/><path d="M406.1 397.9v15"/><path d="M419.1 397.9v15"/><path d="M432.1 397.9v15"/><path d="M445.1 397.9v15"/><path d="M458.1 397.9v15"/><path d="M471.1 397.9v15"/><path d="M484.1 397.9v15"/><path d="M497.1 397.9v15"/><path d="M510.1 397.9v15"/><path d="M523.1 397.9v15"/><path d="M536.1 397.9v15"/><path d="M549.1 397.9v15"/><path d="M562.1 397.9v15"/><path d="M575.1 397.9v15"/><path d="M588.1 397.9v15"/><path d="M601.1 397.9v15"/><path d="M614.1 397.9v15"/><path d="M627.1 397.9v15"/><path d="M640.1 397.9v15"/><path d="M653.1 397.9v15"/><path d="M666.1 397.9v15"/><path d="M679.1 397.9v15"/><path d="M692.1 397.9v15"/><path d="M705.1 397.9v15"/><path d="M718.1 397.9v15"/><path d="M731.1 397.9v15"/><path d="M744.1 397.9v15"/><path d="M757.1 397.9v15"/><path d="M770.1 397.9v15"/><path d="M783.1 397.9v15"/><path d="M796.1 397.9v15"/><path d="M809.1 397.9v15"/><path d="M822.1 397.9v15"/><path d="M835.1 397.9v15"/><path d="M848.1 397.9v15"/><path d="M861.1 397.9v15"/><path d="M874.1 397.9v15"/><path d="M887.1 397.9v15"/><path d="M900.1 397.9v15"/><path d="M913.1 397.9v15"/><path d="M926.1 397.9v15"/><path d="M939.1 397.9v15"/><path d="M952.1 397.9v15"/><path d="M965.1 397.9v15"/><path d="M978.1 397.9v15"/><path d="M991.1 397.9v15"/><path d="M1004.1 397.9v15"/><path d="M1017.1 397.9v15"/><path d="M1030.1 397.9v15"/><path d="M1043.1 397.9v15"/><path d="M1056.1 397.9v15"/><path d="M1069.1 397.9v15"/><path d="M1082.1 397.9v15"/><path d="M1095.1 397.9v15"/><path d="M1108.1 397.9v15"/><path d="M1121.1 397.9v15"/><path d="M1134.1 397.9v15"/><path d="M1147.1 397.9v15"/><path d="M1160.1 397.9v15"/></g>
+      <path d="M354.1 397.9 H1170.5" stroke="var(--ship-ink)" strokeWidth="1.8" opacity=".8" fill="none"/>
+      {/* bridge and wheelhouse */}
+      <path d="M240.6 400.7 L240.6 377.1 L344.4 377.1 L344.4 400.7 Z" fill="var(--ship-ink)" stroke="var(--ship-ink)" strokeWidth="2.2" strokeLinejoin="round"/>
+      <g fill="var(--ship-light)" opacity=".85"><rect x="249.5" y="391.0" width="8" height="9" rx="0.6"/><rect x="262.5" y="391.0" width="8" height="9" rx="0.6"/><rect x="275.5" y="391.0" width="8" height="9" rx="0.6"/><rect x="288.5" y="391.0" width="8" height="9" rx="0.6"/><rect x="301.5" y="391.0" width="8" height="9" rx="0.6"/><rect x="314.5" y="391.0" width="8" height="9" rx="0.6"/><rect x="327.5" y="391.0" width="8" height="9" rx="0.6"/></g>
+      <path d="M215.7 400.7 H354.1" stroke="var(--ship-ink)" strokeWidth="2.4"/>
+      {/* funnels */}
+      <path d="M429.5 406.2 L435.0 312.8 L484.1 312.8 L478.6 406.2 Z" fill="var(--ship-light)" stroke="var(--ship-ink)" strokeWidth="2.4" strokeLinejoin="round"/>
+      <path d="M433.8 350.9 L435.0 312.8 L484.1 312.8 L482.9 350.9 Z" fill="var(--ship-ink)"/>
+      <path d="M555.4 406.2 L560.9 309.3 L612.1 309.3 L606.6 406.2 Z" fill="var(--ship-light)" stroke="var(--ship-ink)" strokeWidth="2.4" strokeLinejoin="round"/>
+      <path d="M559.7 350.9 L560.9 309.3 L612.1 309.3 L610.9 350.9 Z" fill="var(--ship-ink)"/>
+      {/* steam */}
+      <g fill="none" stroke="var(--ship-ink)" strokeWidth="2" opacity=".22" strokeLinecap="round"><path d="M454.4 308.0 c-6 -26 14 -40 6 -66 c-6 -20 12 -30 8 -48"/><path d="M581.0 304.5 c-7 -22 12 -36 5 -58 c-5 -17 10 -26 7 -42"/></g>
+      {/* ventilators and deck clutter */}
+      <path d="M387.4 400.7v-11.5 a5.5 5.5 0 0 1 11.0 0 l0 3.8" fill="none" stroke="var(--ship-ink)" strokeWidth="1.8"/>
+      <path d="M509.2 400.7v-11.5 a5.5 5.5 0 0 1 11.0 0 l0 3.8" fill="none" stroke="var(--ship-ink)" strokeWidth="1.8"/>
+      <path d="M628.2 400.7v-11.5 a5.5 5.5 0 0 1 11.0 0 l0 3.8" fill="none" stroke="var(--ship-ink)" strokeWidth="1.8"/>
+      <path d="M1098.7 400.7v-11.5 a5.5 5.5 0 0 1 11.0 0 l0 3.8" fill="none" stroke="var(--ship-ink)" strokeWidth="1.8"/>
+      <path d="M1140.2 400.7v-11.5 a5.5 5.5 0 0 1 11.0 0 l0 3.8" fill="none" stroke="var(--ship-ink)" strokeWidth="1.8"/>
+      {/* lifeboats */}
+      <g><path d="M634.6 396.5 q17.0 16.5 34 0 z" fill="var(--ship-light)" stroke="var(--ship-ink)" strokeWidth="1.6"/><path d="M634.6 396.5h34" stroke="var(--ship-ink)" strokeWidth="1.6"/><path d="M636.6 396.5v-7 M666.6 396.5v-7" stroke="var(--ship-ink)" strokeWidth="1.4" opacity=".7"/></g>
+      <g><path d="M724.5 396.5 q17.0 16.5 34 0 z" fill="var(--ship-light)" stroke="var(--ship-ink)" strokeWidth="1.6"/><path d="M724.5 396.5h34" stroke="var(--ship-ink)" strokeWidth="1.6"/><path d="M726.5 396.5v-7 M756.5 396.5v-7" stroke="var(--ship-ink)" strokeWidth="1.4" opacity=".7"/></g>
+      <g><path d="M814.5 396.5 q17.0 16.5 34 0 z" fill="var(--ship-light)" stroke="var(--ship-ink)" strokeWidth="1.6"/><path d="M814.5 396.5h34" stroke="var(--ship-ink)" strokeWidth="1.6"/><path d="M816.5 396.5v-7 M846.5 396.5v-7" stroke="var(--ship-ink)" strokeWidth="1.4" opacity=".7"/></g>
+      <g><path d="M904.4 396.5 q17.0 16.5 34 0 z" fill="var(--ship-light)" stroke="var(--ship-ink)" strokeWidth="1.6"/><path d="M904.4 396.5h34" stroke="var(--ship-ink)" strokeWidth="1.6"/><path d="M906.4 396.5v-7 M936.4 396.5v-7" stroke="var(--ship-ink)" strokeWidth="1.4" opacity=".7"/></g>
+      <g><path d="M994.4 396.5 q17.0 16.5 34 0 z" fill="var(--ship-light)" stroke="var(--ship-ink)" strokeWidth="1.6"/><path d="M994.4 396.5h34" stroke="var(--ship-ink)" strokeWidth="1.6"/><path d="M996.4 396.5v-7 M1026.4 396.5v-7" stroke="var(--ship-ink)" strokeWidth="1.4" opacity=".7"/></g>
+      {/* masts, rigging, colours */}
+      <g fill="none" stroke="var(--ship-ink)" strokeWidth="1.1" opacity=".45"><path d="M287.7 161.3 L146.5 447.7 M287.7 161.3 L423.2 402.1"/><path d="M866.5 96.2 L700.0 402.1 M866.5 96.2 L1066.7 402.1"/><path d="M866.5 96.2 L1295.0 489.2"/><path d="M287.7 171.0 L866.5 105.2"/></g>
+      <path d="M289.7 406.2 L286.7 150.9" stroke="var(--ship-ink)" strokeWidth="3"/>
+      <path d="M257.2 240.1 H323.6" stroke="var(--ship-ink)" strokeWidth="2.2"/>
+      <path d="M869.5 403.4 L865.5 84.5" stroke="var(--ship-ink)" strokeWidth="3.2"/>
+      <path d="M838.4 171.0 H907.6" stroke="var(--ship-ink)" strokeWidth="2.2"/>
+      {/* masthead pennant and ensign */}
+      <path d="M865.5 87.9 l30 9 l-30 9 z" fill="var(--ship-accent)"/>
+      <path d="M1335.2 500.3 L1335.2 378.5" stroke="var(--ship-ink)" strokeWidth="2.2"/>
+      <path d="M1335.2 381.3 q20 -5 36 4 l0 20 q-17 -8 -36 -3 z" fill="var(--ship-accent)"/>
+      {/* wake */}
+      <g fill="none" stroke="var(--ship-accent)" strokeWidth="2" opacity=".5" strokeLinecap="round"><path d="M1322.7 626.2 q60 8 130 2"/><path d="M91.1 629.0 q-50 6 -96 1"/><path d="M118.8 622.1 q120 6 300 3" opacity=".3"/></g>
+    </svg>
+  );
+}

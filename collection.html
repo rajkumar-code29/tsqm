@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Private viewing</title>
+
+    <!--
+      This is the shell for the private collection site, which is deployed
+      separately from the public charity site and shares none of its pages.
+
+      robots is set here as well as at runtime: this site should never be
+      indexed, and a meta tag in the served HTML is seen by a crawler that
+      never executes the JavaScript.
+    -->
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="color-scheme" content="light" />
+
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+        default-src 'self';
+        base-uri 'self';
+        object-src 'none';
+        form-action 'none';
+        script-src 'self';
+        style-src 'self' 'unsafe-inline';
+        font-src 'self';
+        img-src 'self' data:;
+        connect-src 'self';
+        manifest-src 'self'
+      "
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <div style="padding: 3rem 1.5rem; font-family: Georgia, serif; max-width: 40rem; margin: 0 auto">
+        <p>This page needs JavaScript.</p>
+      </div>
+    </noscript>
+    <script type="module" src="/src/main-collection.tsx"></script>
+  </body>
+</html>

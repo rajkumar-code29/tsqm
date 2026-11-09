@@ -1,0 +1,25 @@
+# Dependencies and build output
+node_modules/
+dist/
+build/
+.cache/
+.vite/
+*.tsbuildinfo
+
+# Logs
+*.log
+*-debug.log*
+logs/
+
+# Editor and OS
+.DS_Store
+.vscode/
+.idea/
+
+# Secrets and unpublished content.
+# .env holds the private page's path hash and asset name; content/ holds the
+# plaintext the sealed collection is built from. Neither is ever deployed.
+.env
+.env.local
+!.env.example
+/content/
